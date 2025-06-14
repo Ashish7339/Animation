@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: black;
+      }
+      .parent {
+        display: flex;
+        gap: 5px;
+      }
+      .box {
+        height: 20px;
+        width: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+        animation-duration: 2000ms;
+        animation-iteration-count: infinite;
+        animation-name: loader;
+      }
+      @keyframes loader {
+        0% {
+          height: 0px;
+          width: 0px;
+          transform: scale(0, 0);
+        }
+        50% {
+          height: 20px;
+          width: 20px;
+          transform: scale(1, 1);
+        }
+        100% {
+          height: 0px;
+          width: 0px;
+          transform: scale(0, 0);
+        }
+      }
+      .box:nth-child(1) {
+        background-color: #4285f4;
+        animation-delay: 200ms;
+      }
+      .box:nth-child(2) {
+        background-color: #db4437;
+        animation-delay: 400ms;
+      }
+      .box:nth-child(3) {
+        background-color: #f4b400;
+        animation-delay: 600ms;
+      }
+      .box:nth-child(4) {
+        background-color: #0f9d58;
+        animation-delay: 800ms;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
