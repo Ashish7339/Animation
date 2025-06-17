@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+      }
+      .main {
+        margin: 50px auto;
+        height: 350px;
+        width: 350px;
+        border: 2px solid black;
+      }
+      img {
+        transform-origin: top left;
+        transition: 1s;
+        height: 100%;
+        width: 100%;
+      }
+      .main:hover img {
+        transform: rotate3d(1, 1, 1, 45deg);
+      }
+
+      /* .cta{
+        color: white;
+        background-color: teal;
+        top: 100px;
+        left: -45px;
+        padding: 10px 10px;
+        position: fixed;
+        transform: rotateZ(-90deg);
+        transition: 1s;
+      }
+      .cta:hover {
+        transform: rotate(90deg);
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <div class="cta">Hover to Rotate</div> -->
+    <div class="main">
+      <img src="https://picsum.photos/200/300?random=1" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        height: 100px;
+        width: 100%;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        color: white;
+        gap: 20px;
+      }
+      ul li {
+        padding: 20px 20px;
+        cursor: pointer;
+        /* margin-inline: 20px; */
+        transition: 0.3s ;
+
+      }
+      li:hover{
+        transform: translateY(-10px);
+        border-bottom: 5px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Gallery</li>
+      </ul>
+    </nav>
+  </body>
+</html>
